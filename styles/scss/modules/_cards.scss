@@ -1,0 +1,78 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 325px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__background{
+        background-color: var(--light-red-work);
+        width: 100%;
+        overflow: hidden;
+        border-radius: 15px 15px 0 0;
+        z-index: 5;
+        
+        &-img{
+            margin-top: -15px;
+            padding-left: 230px;
+        }
+    }
+
+    &__info{
+        background-color: var(--dark-blue);
+        border-radius: 15px;
+        width: 275px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        transform: translateY(-35px);
+        gap: 0.5rem;
+        cursor: pointer;
+        transition: filter 0.25s;
+
+        &:hover{
+            filter: brightness(1.75);
+        }
+
+        &-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-activity{
+                margin: 0;
+                color: white;
+                font-size: 18px;
+            }
+        }
+
+        &-details{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-time{
+                margin: 0;
+                font-size: 2rem;
+                font-weight: 300;
+                color: white;
+            }
+
+            &-prev{
+                margin: 0;
+                font-size: 14px;
+                font-weight: 300;
+                color: var(--pale-blue);
+            }
+        }
+    }
+}

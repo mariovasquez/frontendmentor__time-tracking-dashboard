@@ -18,14 +18,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  width: 265px;
+  padding: 0 30px;
 }
 .main-card__user {
   z-index: 10;
   display: flex;
   align-items: center;
-  width: 265px;
   background-color: var(--blue);
+  width: 100%;
   padding: 30px;
   gap: 1rem;
   border-radius: 1rem;
@@ -57,19 +58,93 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 265px;
   background-color: var(--dark-blue);
+  width: 100%;
   padding: 40px 30px 15px 30px;
   gap: 1rem;
   border-radius: 0 0 1rem 1rem;
   transform: translateY(-25px);
 }
 .main-card__frequency-option {
-  color: var(--pale-blue);
+  color: var(--desaturated-blue);
   cursor: pointer;
+  transition: color 0.25s;
+}
+.main-card__frequency-option--active {
+  color: white;
 }
 .main-card__frequency-option:hover {
   color: white;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 325px;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__background {
+  background-color: var(--light-red-work);
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  z-index: 5;
+}
+.card__background-img {
+  margin-top: -15px;
+  padding-left: 230px;
+}
+.card__info {
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+  width: 275px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  transform: translateY(-35px);
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: filter 0.25s;
+}
+.card__info:hover {
+  filter: brightness(1.75);
+}
+.card__info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__info-title-activity {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+}
+.card__info-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__info-details-time {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+}
+.card__info-details-prev {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--pale-blue);
 }
 
 /*# sourceMappingURL=library.css.map */

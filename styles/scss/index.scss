@@ -1,4 +1,5 @@
 .body{
+    margin: 0;
     background-color: var(--very-dark-blue);
 }
 
@@ -7,4 +8,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 4.5rem 0 2.5rem 0;
+}
+
+.attribution{
+    text-align: center;
+    color: white;
+    margin: 0 0 2rem 0;
+
+    & > a{
+        text-decoration: none;
+        color: var(--desaturated-blue);
+    }
 }
