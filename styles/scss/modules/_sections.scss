@@ -1,0 +1,32 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container{
+    &__main-card{
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        width: 265px;
+        background-color: var(--blue);
+        padding: 30px;
+        gap: 1rem;
+        border-radius: 1rem;
+    }
+    &__main-subcard{
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 265px;
+        background-color: var(--dark-blue);
+        padding: 55px 30px 30px 30px;
+        gap: 1rem;
+        border-radius: 0 0 1rem 1rem;
+        transform: translateY(-25px);
+    }
+}

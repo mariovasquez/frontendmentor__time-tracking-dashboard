@@ -13,4 +13,65 @@
   --pale-blue: hsl(236, 100%, 87%);
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.container__main-card {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 265px;
+  background-color: var(--blue);
+  padding: 30px;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.container__main-subcard {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 265px;
+  background-color: var(--dark-blue);
+  padding: 55px 30px 30px 30px;
+  gap: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  transform: translateY(-25px);
+}
+
+.card__name {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+}
+.card__paragraph {
+  margin: 0;
+  color: var(--pale-blue);
+  font-size: 18px;
+}
+.card__paragraph--active-state {
+  cursor: pointer;
+}
+.card__paragraph--active-state:hover {
+  color: white;
+}
+
+.main-card__img-profile {
+  width: 72px;
+  height: 72px;
+  border-radius: 50px;
+  box-shadow: 0 0 0 0.25rem white;
+}
+.main-card__name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 /*# sourceMappingURL=library.css.map */
