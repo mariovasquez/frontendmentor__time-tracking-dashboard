@@ -1,6 +1,10 @@
 .body{
+    display: flex;
+    flex-direction: column;
     margin: 0;
     background-color: var(--very-dark-blue);
+    align-items: center;
+    justify-content: center;
 }
 
 .main-container{
@@ -9,12 +13,15 @@
     align-items: center;
     justify-content: center;
     margin: 4.5rem 0 2.5rem 0;
+    max-width: 375px;
+    overflow: hidden;
 }
 
 .attribution{
     text-align: center;
     color: white;
     margin: 0 0 2rem 0;
+    max-width: 375px;
 
     & > a{
         text-decoration: none;
