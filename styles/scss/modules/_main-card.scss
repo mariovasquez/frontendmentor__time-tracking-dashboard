@@ -1,0 +1,65 @@
+.main-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+    &__user{
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        width: 265px;
+        background-color: var(--blue);
+        padding: 30px;
+        gap: 1rem;
+        border-radius: 1rem;
+
+        &-img{
+            width: 72px;
+            height: 72px;
+            border-radius: 50px;
+            box-shadow: 0 0 0 0.25rem white;
+        }
+    
+        &-info{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+
+    &__paragraph{
+        margin: 0;
+        color: var(--pale-blue);
+        font-size: 18px;
+    }
+
+    &__name{
+        margin: 0;
+        font-weight: 300;
+        font-size: 24px;
+        color: white;
+    }
+
+    &__frequency{
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 265px;
+        background-color: var(--dark-blue);
+        padding: 40px 30px 15px 30px;
+        gap: 1rem;
+        border-radius: 0 0 1rem 1rem;
+        transform: translateY(-25px);
+
+        &-option{
+            color: var(--pale-blue);
+            cursor: pointer;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}
